@@ -16,14 +16,14 @@ export default function HomePage() {
           <ChevronRight />
         </RoundedButton>
       </div>
-      <h1 className="font-semibold text-3xl mt-10">Good {getTimeOfDay()}</h1>
-      <div className="grid grid-cols-3 gap-4 mt-4">
+      <h1 className="mt-10 text-3xl font-semibold">Good {getTimeOfDay()}</h1>
+      <div className="mt-4 grid grid-cols-3 gap-4">
         {DUMMY_ALBUMS.map(({ cover, href, title }) => (
           <SmallPlaylist key={title} cover={cover} href={href} title={title} />
         ))}
       </div>
-      <h2 className="font-semibold text-2xl mt-10">Made for you</h2>
-      <div className="grid grid-cols-8 gap-4 mt-4">
+      <h2 className="mt-10 text-2xl font-semibold">Made for you</h2>
+      <div className="mt-4 grid grid-cols-8 gap-4">
         {DUMMY_ALBUMS.map(({ cover, href, title, description }) => (
           <CardPlaylist
             key={title}

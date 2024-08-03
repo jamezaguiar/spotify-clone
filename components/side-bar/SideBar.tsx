@@ -28,7 +28,7 @@ export function SideBar() {
       </nav>
 
       <nav>
-        <ul className="mt-6 pt-6 border-t border-zinc-800 flex flex-col gap-3">
+        <ul className="mt-6 flex flex-col gap-3 border-t border-zinc-800 pt-6">
           <li>
             <NavLink variant="playlist" href="/playlist/chill-vibes">
               Chill Vibes

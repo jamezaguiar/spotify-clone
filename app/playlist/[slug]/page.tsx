@@ -1,12 +1,11 @@
 type PlaylistDetailPageParams = {
-  params: {
+  params: Promise<{
     slug: string;
-  };
+  }>;
 };
 
-export default function PlaylistDetailPage({
-  params,
-}: PlaylistDetailPageParams) {
+export default async function PlaylistDetailPage(props: PlaylistDetailPageParams) {
+  const params = await props.params;
   const { slug } = params;
 
   return <div>playlist detail page {slug}</div>;
